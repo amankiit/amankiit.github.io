@@ -1,312 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Raj - Associate Software Engineer with full-stack experience in React, Node.js, Express, AI/LLM integrations, and healthcare interoperability.">
 
-    <!-- Bootstrap CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/8655859597.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>Portofolio</title>
-  </head>
-  <body>
-    
-    <div class="header">
-  
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: rgb(0, 0, 0);">
-        <a class="navbar-brand" href="#">
-            <img src=" "class="d-inline-block align-top" alt="">
-    
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon ">
-            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-          </span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-            <li class="nav-item ">
-              <a class="nav-link" style="color:rgb(226, 226, 226);" href="#section1">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" style="color:rgb(226, 226, 226);" href="#section2">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:rgb(226, 226, 226);" href="#section3">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:rgb(226, 226, 226);" href="#section4">Blogs</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="contact/index.html">Contact form</a>
-                <a class="dropdown-item" href="#">Feedback</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">More options soon..</a>
-              </div>
-            </li>
-          
-          </ul>
-         
-          <i class="fa-solid fa-moon brd" style="border-radius: 100%;background-color: rgb(92, 92, 92);width: 19px;height: 19px;padding-top: 1.5px;padding-left: 1px;"  onclick="myFunction()"></i>
-        
+
+    <title>Aman Raj | Portfolio</title>
+</head>
+<body class="dark-mode">
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-text">Aman Raj</span>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Summary</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#works" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-theme-item">
+                        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+                            <i class="fas fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
         </div>
-      </nav>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>  
-    </div>
-    
-      <div id="section1" class="container-fluid main">
-        <div class="row r1">
-          <div class="col-md-12 profilepicture text-center"> 
-            <img class="img1" src="img/me.png" id="profilepic"> 
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="img/me.png" alt="Aman Raj" class="profile-pic">
+                    <h1 class="hero-title">Aman Raj</h1>
+                    <p class="hero-subtitle">Software Engineer</p>
+                    <p class="hero-tagline"> A Full-Stack Software Engineer focused on scalable web apps, healthcare interoperability, and AI-powered products.</p>
+
+                    <div class="hero-links">
+                      
+                        <a href="https://github.com/amanKIIT" target="_blank" rel="noopener noreferrer" class="hero-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://leetcode.com/amanKIIT" target="_blank" rel="noopener noreferrer" class="hero-link">
+                            <i class="fas fa-code"></i> LeetCode
+                        </a>
+                        
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">View Experience <i class="fas fa-briefcase"></i></a>
+                        <a href="#works" class="btn btn-secondary">View Projects <i class="fas fa-diagram-project"></i></a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Professional Summary</h2>
+
+                <div class="about-content">
+                    <div class="about-text summary-card">
+                        <p>Full-Stack Software Engineer with hands-on experience building scalable web applications using React.js, Node.js, Express.js, and RESTful APIs. Proficient in JavaScript, Python, MySQL, MongoDB, Redis, JWT authentication, AI/LLM integrations, and AWS cloud services.</p>
+                        <p>Delivered full-stack healthcare solutions, real-time features with WebSockets, and third-party integrations including Stripe payment gateway, Zoom webinars/meetings, and HL7 FHIR workflows.</p>
+                        <p>Strong focus on clean code, MVC architecture, Agile methodologies, HIPAA compliance, and problem-solving.</p>
+                    </div>
+
+                    <div class="skills-section">
+                        <div class="skills-box">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-categories">
+                                <p><strong>Languages:</strong> JavaScript, Python, HTML, CSS</p>
+                                <p><strong>Frontend:</strong> React.js</p>
+                                <p><strong>Backend:</strong> Node.js, Express.js, Django</p>
+                                <p><strong>Databases:</strong> MySQL, MongoDB, Redis</p>
+                                <p><strong>Tools:</strong> Git, GitHub, Docker, Postman, Jira</p>
+                                <p><strong>Cloud:</strong> AWS</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-box">
+                            <h3>Core Concepts</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">RESTful APIs</span>
+                                <span class="skill-tag">WebSockets</span>
+                                <span class="skill-tag">Webhooks</span>
+                                <span class="skill-tag">JWT/OAuth</span>
+                                <span class="skill-tag">AI/LLM Integrations</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">Agile/Scrum</span>
+                                <span class="skill-tag">CI/CD Concepts</span>
+                                <span class="skill-tag">HL7 FHIR</span>
+                                <span class="skill-tag">HIPAA Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
-              <h1 class="hc"> Hi I am  Aman,
-                <br>A web3 Developer.</h1>
-                <h2 class="hd">Working for a decentralized future.</h2>
-              </div>
-                
-      </div>
-      
-      <div class="row r3">
-        <div class="col-md-12 text-center">
-                <a href="resume/resume.html" target="_blank" class="btn btn-warning text-center">Resume <i class="fa-solid fa-file-lines" style="padding-left:5px ;"></i></a>
-               
-                <a href="#" class="btn btn-dark text-center">Github <i class="fa-brands fa-github" style="padding-left:5px ;"></i></a>
-         
-          </div>
-           
-          
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="timeline" aria-label="LinkedIn style experience timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <h3>Associate Software Engineer</h3>
+                                <p class="timeline-org">Hale Healthcare IT Labs</p>
+                                <p class="timeline-meta">Bhubaneswar, India | July 2024 - November 2025</p>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Developed responsive healthcare interfaces using React.js, Hooks, and Context API.</li>
+                                <li>Designed secure backend systems and RESTful APIs using Node.js, Express.js, and JWT authentication.</li>
+                                <li>Integrated Stripe payments, Zoom APIs, and EHR systems including OpenEMR, Epic, and Oracle Health.</li>
+                                <li>Implemented HL7 FHIR and SMART on FHIR workflows for interoperable Clinical Decision Support applications.</li>
+                                <li>Built AI/LLM integrations and scalable full-stack modules using MVC architecture and npm packages such as jsonwebtoken, mysql2, fhirclient, and puppeteer.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <h3>Software Engineer Intern</h3>
+                                <p class="timeline-org">Hale Healthcare IT Labs</p>
+                                <p class="timeline-meta">Bhubaneswar, India | December 2023 - June 2024</p>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Engineered HIPAA-compliant real-time chat using WebSockets, Socket.io, and role-based access control.</li>
+                                <li>Built backend APIs with Node.js and Express.js and integrated Redis for queueing and real-time storage.</li>
+                                <li>Collaborated with senior engineers on healthcare workflows, compliance, and security standards.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <h3>Data Science Intern</h3>
+                                <p class="timeline-org">Celebal Technologies</p>
+                                <p class="timeline-meta">Remote | June 2023 - August 2023</p>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Performed analysis, feature engineering, and ML model development using Python, Pandas, NumPy, and Scikit-learn.</li>
+                                <li>Implemented customer segmentation via clustering and fraud detection using classification techniques.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
-         
+        </section>
+
+        <section id="works" class="works">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image"><i class="fas fa-stethoscope" aria-hidden="true"></i></div>
+                        <div class="project-content">
+                            <p class="project-meta">December 2025</p>
+                            <h3>AI Powered CDS Application (SMART on FHIR)</h3>
+                            <p>Built a full-stack Clinical Decision Support app that connects to EHRs with SMART on FHIR and uses AI/LLM models to generate care recommendations from patient vitals and reports.</p>
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                        <div class="project-content">
+                            <p class="project-meta">November 2023</p>
+                            <h3>Crop Disease Detection System</h3>
+                            <p>Created a CNN-based deep learning system with TensorFlow and Keras for crop disease classification, including preprocessing and evaluation with Pandas, NumPy, and Scikit-learn.</p>
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image"><i class="fas fa-users" aria-hidden="true"></i></div>
+                        <div class="project-content">
+                            <p class="project-meta">July 2023</p>
+                            <h3>Customer Segmentation Using ML</h3>
+                            <p>Applied clustering algorithms in Python to segment customers based on behavioral and demographic patterns.</p>
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image"><i class="fab fa-ethereum" aria-hidden="true"></i></div>
+                        <div class="project-content">
+                            <p class="project-meta">April 2023</p>
+                            <h3>Ethereum Voting Application</h3>
+                            <p>Developed a decentralized voting dApp using Solidity, Truffle, Ganache, and MetaMask with a secure frontend built in JavaScript, HTML, and CSS.</p>
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image"><i class="fas fa-shield-virus" aria-hidden="true"></i></div>
+                        <div class="project-content">
+                            <p class="project-meta">April 2023</p>
+                            <h3>Sparse Data Study for Malware Detection</h3>
+                            <p>Compared sparse data handling techniques and evaluated multiple machine learning classifiers for Android malware detection.</p>
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="container">
+                <h2>Education & Credentials</h2>
+                <div class="education-grid">
+                    <article class="education-card">
+                        <h3>Bachelor of Technology in Computer Science Engineering</h3>
+                        <p class="education-meta">Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar | 2024</p>
+                        <p>CGPA: 8.71 / 10</p>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>12th (Intermediate)</h3>
+                        <p class="education-meta">Chinmaya Vidyalaya (CBSE) | 2020</p>
+                        <p>Percentage: 74.20%</p>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>10th (Matriculation)</h3>
+                        <p class="education-meta">Chinmaya Vidyalaya (CBSE) | 2018</p>
+                        <p>Percentage: 84.83%</p>
+                    </article>
+                </div>
+
+                <div class="edu-extra-grid">
+                    <article class="skills-box">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Web Development - Coursera</li>
+                            <li>Blockchain Basics and Foundation - Coursera</li>
+                            <li>Problem Solving (Intermediate) - HackerRank</li>
+                            <li>AWS Graduate - Amazon Web Services</li>
+                        </ul>
+                    </article>
+
+                    <article class="skills-box">
+                        <h3>Additional Achievements</h3>
+                        <p>Content Creator on YouTube and X (Aug 2021 - Present), publishing educational content on AI, crypto, healthtech, and macro finance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="contact-intro">Open to full-time software engineering opportunities, impactful product teams, and healthcare + AI projects.</p>
+
+                <div class="contact-methods">
+                    <a href="https://linkedin.com/in/amanraj31" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/amanraj31</span>
+                    </a>
+                    
+                    <a href="https://x.com/f_sicc" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>@f_sicc</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aman Raj. Made with <i class="fas fa-heart"></i> by a KIITian</p>
         </div>
-      <div class="space2">
-      </div>
-        
-        
-        
-      <div id="section2" class="container-fluid">
-        <h1 class="hc btn btnw text-center">ABOUT ME</h1>
-       
-        <p id="ps1">
-          I am a Computer Science undergrad at Kalinga Institute of Industrial Technology (KIIT) located in Bhubaneswar, India. From an early age I 
-          have been fond of technology and related stuff, with that eagerness I decided to start my graduation in engineering. I am a very experimental kind of guy,
-          when it comes to trying new things I am always ready to lose on money. From my high school days I am closely involved in Android customization using Custom Android OS and other open-source OS sflashing and other stuffs, and using tweaked custom kernels to overclock processor frequency to make games smoother.
-          It all started because I was annoyed of slowing down of smartphones by companies for their business,and the sluggish UI of the customized skin of Xiaomi's phones... oh God! , that is how I got into Custom Android OS and explored a lot about it in the forums like XDA. One can even run a 5 yar old phone without any issues with proper software, but if everyone is able to use a phone for more than 5 years..how will the companies get more money....and here comes their dirty games of slowing down phones.
-      </p>
-      <p id="ps1">
-        After the completion of my high school, as a normal adult I was looking to make money side by side with my graduation time, so I decided to invest in stocks and that is how I came to know much about finance. As time passed I moved to crypto market for quick money. I was new and knew nothing about this market. i just bought a shitcoin for 5000 rupees and sold it at a loss of 30%, and that was the time for me to learn some lesson, learning is essential in every phase, 
-        it makes you know where you stand. As I started researching more about this market I started believeing more in this market not for money, this time, this time for the tech and decentralization. All our financial market are flawed and manipulated, and the crypto markets too, but some fully decentralized blockchain networks like bitcoin and ethereum are unique, and I belive future is now all about privacy, trust, and decentralization which is going to be web3.
-      </p>
+    </footer>
 
-
-
-
-<br>
-<div class="text-center">
-     <u> <h3 class="he btn btnx " style="text-align: center;"> My Technical Skills</h3></u><br><br>
-    </div>
-      <div class="l" style="text-align: center;">
-          HTML<i class="fa-brands fa-html5" style="color:red;"></i><br>
-          CSS<i class="fa-brands fa-css3-alt" style="color:rgb(54, 158, 255);"></i> <br>
-          Bootstrap <i class="fa-brands fa-bootstrap" style="color:rgb(178, 150, 255);"></i><br>
-          c/c++/Java
-         <i class="fa-brands fa-java"></i><br>
-        Javascript <i class="fa-brands fa-js-square" style="color:rgb(231, 93, 0);"></i><br>
-        ReactJs <i class="fa-brands fa-react" style="color:rgb(0, 101, 129);"></i><br>
-        MySQL <i class="fa-solid fa-database" style="color:rgb(80, 197, 255);"></i>
-       
-      </div>
-
-    <br>
-    <br>          
-    <div class="text-center">
-   <u><h3 class="he btn btnxx" style="text-align: center;">Certifications</h3></u> <br></div> 
-  <div class="l" style="text-align: center;" >
-    <br>
-  HackerRank Problem Solving <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank"> <i class="fa fa-link" aria-hidden="true"></i></a><br>
-  Web Development-Johns Hopkins University  <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank"> <i class="fa fa-link" aria-hidden="true"></i></a><br>
-  Blockchain basics and foundation - Consensys  <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank"> <i class="fa fa-link" aria-hidden="true"></i></a><br>
-  Linux CLI Shell Scripting   <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank"> <i class="fa fa-link" aria-hidden="true"></i></a>  
-</div>
-      </div>
-
-      <div class="space1">
-      </div>
-
-      <div id="section3" class="container-fluid">
-        <h1 class="hc">MY WORKS</h1><br>
-  
-        <div class="card-deck-wrapper">
-          <div class="card-deck">
-            <div class="card" style="border-radius:20px;">
-              <img class="card-img-top mx-auto d-block" style="max-width: 70%;margin: 1rem;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NFT_Icon.png/480px-NFT_Icon.png" alt="Card image cap">
-              <div class="card-block" >
-                <h4 class="card-title" style="padding: 10px;">Card title</h4>
-                <p class="card-text" style="margin-left: 10px;">This is a wider card</p>
-                <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank" class="btn btn-secondary" style="margin-bottom: 20px; margin-left: 10px;"> Github <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            
-            <div class="card" style="border-radius:20px;">
-              <img class="card-img-top mx-auto d-block" style="max-width: 70%;margin: 1rem;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NFT_Icon.png/480px-NFT_Icon.png" alt="Card image cap">
-              <div class="card-block" >
-                <h4 class="card-title" style="padding: 10px;">Card title</h4>
-                <p class="card-text" style="margin-left: 10px;">This is a wider card</p>
-                <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank" class="btn btn-secondary" style="margin-bottom: 20px; margin-left: 10px;"> Github <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-
-            <div class="card" style="border-radius:20px;">
-              <img class="card-img-top mx-auto d-block" style="max-width: 70%;margin: 1rem;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NFT_Icon.png/480px-NFT_Icon.png" alt="Card image cap">
-              <div class="card-block" >
-                <h4 class="card-title" style="padding: 10px;">Card title</h4>
-                <p class="card-text" style="margin-left: 10px;">This is a wider card</p>
-                <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank" class="btn btn-secondary" style="margin-bottom: 20px; margin-left: 10px;"> Github <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-
-            <div class="card" style="border-radius:20px;">
-              <img class="card-img-top mx-auto d-block" style="max-width: 70%;margin: 1rem;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NFT_Icon.png/480px-NFT_Icon.png" alt="Card image cap">
-              <div class="card-block" >
-                <h4 class="card-title" style="padding: 10px;">Card title</h4>
-                <p class="card-text" style="margin-left: 10px;">This is a wider card</p>
-                <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank" class="btn btn-secondary" style="margin-bottom: 20px; margin-left: 10px;"> Github <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-
-          
-
-          </div>
-        </div>
-
-    </div>
-
-
-
-
-     
-  </div>
-  <div class="space2">
-  </div>
-</div>
-<div class="space2">
-</div>
-  
-
-      
-   
-
-<!-- Footer -->
-<footer class="text-center text-lg-start  text-muted" style="background-color: rgba(0, 0, 0, 0.05); ">
-  <!-- Section: Social media -->
-  <section>
-    <!-- Grid column -->
-    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 p-1 border-bottom">
-      <!-- Links -->
-    
-     
-        Contact : 2005362@kiit.ac.in
-     
-      
- 
-      
-      
-    </div>
-  </section>
-  <section
-    class="justify-content-center justify-content-lg-between p-2 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-     
-      
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div style="color:rgb(169, 121, 0);">
-      
-        
-        <a href="mailto:2005362@kiit.ac.in" class="me-4"  data-toggle="tooltip" data-placement="top" title="2005362@kiit.ac.in">
-        <i class="fa fa-envelope"></i></a>
-      </a>
-      <a href="" class="me-4" style="color:rgb(53, 117, 255) ;">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-github" style="color:rgb(124, 124, 124) ;"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-youtube-play" style="color:rgb(255, 46, 46) ;"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-twitter" style="color:rgb(39, 103, 243) ;"> </i>
-      </a>
-     
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-instagram" style="color:rgb(255, 0, 162) ;"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-
-
-  <section>
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 pb-2">
-          <!-- Links -->
-        
-          <div class="pf" style="padding-top:10px;"> Made with <i class="fa-solid fa-heart" style="color: rgb(254, 46, 154);"></i>  by a KIITian</div> 
-     
-          
-          
-        </div>
-      </section>
-
-  <!-- Section: Links  -->
-
-  
-</footer>
-<!-- Footer -->
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
-    <script>
-      // When the user scrolls the page, execute myFunction 
-      window.onscroll = function() {myFun()};
-      
-      function myFun() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-      }
-      </script>
-      
-
-
-
-
 </body>
 </html>
