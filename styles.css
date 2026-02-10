@@ -868,6 +868,75 @@ body.dark-mode .legend-dot.level-4 {
     color: #ef4444;
 }
 
+.floating-x-articles {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1100;
+    width: min(320px, calc(100vw - 2rem));
+}
+
+.floating-x-articles summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-left: auto;
+    padding: 0.68rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--secondary-color) 45%, var(--border-color));
+    border-radius: 999px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--secondary-color) 86%, #0b1220), var(--secondary-color));
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.floating-x-articles summary::-webkit-details-marker {
+    display: none;
+}
+
+.floating-x-articles summary:hover,
+.floating-x-articles summary:focus-visible {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+}
+
+.floating-x-articles[open] summary {
+    border-radius: 12px;
+}
+
+.floating-x-panel {
+    margin-top: 0.55rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-md);
+    padding: 0.55rem;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.floating-x-panel a {
+    text-decoration: none;
+    color: var(--text-primary);
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    padding: 0.48rem 0.65rem;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.floating-x-panel a:hover,
+.floating-x-panel a:focus-visible {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateX(3px);
+}
+
 @media (max-width: 860px) {
     .nav-toggle {
         display: inline-flex;
@@ -975,6 +1044,17 @@ body.dark-mode .legend-dot.level-4 {
     .project-content,
     .contact-link {
         padding: 1rem;
+    }
+
+    .floating-x-articles {
+        right: 0.7rem;
+        bottom: 0.7rem;
+        width: min(300px, calc(100vw - 1.4rem));
+    }
+
+    .floating-x-articles summary {
+        padding: 0.62rem 0.9rem;
+        font-size: 0.9rem;
     }
 }
 
