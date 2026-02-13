@@ -965,6 +965,22 @@ body.dark-mode .legend-dot.level-4 {
     transform: translateX(3px);
 }
 
+.floating-x-status {
+    margin: 0;
+    text-decoration: none;
+    color: var(--text-secondary);
+    background: var(--bg-page);
+    border: 1px dashed var(--border-color);
+    border-radius: 9px;
+    padding: 0.48rem 0.65rem;
+    font-size: 0.9rem;
+}
+
+.floating-x-status-error {
+    color: #ef4444;
+    border-style: solid;
+}
+
 @media (max-width: 860px) {
     .nav-toggle {
         display: inline-flex;
