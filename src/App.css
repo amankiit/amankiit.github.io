@@ -828,6 +828,45 @@ p {
 }
 
 @media (max-width: 700px) {
+  html {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 8.5vw, 2.25rem);
+  }
+
+  h2 {
+    font-size: clamp(1.28rem, 6.2vw, 1.6rem);
+    margin-bottom: 0.95rem;
+  }
+
+  h3 {
+    font-size: 0.98rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .meta,
+  .muted {
+    font-size: 0.84rem;
+  }
+
+  .button {
+    font-size: 0.92rem;
+  }
+
+  .social-chip {
+    font-size: 0.82rem;
+  }
+
   .section {
     padding: 3.2rem 0;
   }
@@ -892,18 +931,37 @@ p {
   }
 
   .timeline-head {
-    flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.5rem;
+  }
+
+  .timeline-head > div:first-child {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .timeline-head h3 {
+    font-size: 0.94rem;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-org {
+    font-size: 0.82rem;
+    line-height: 1.3;
   }
 
   .timeline-meta-wrap {
-    width: 100%;
-    text-align: right;
+    flex-shrink: 0;
+    max-width: 46%;
   }
 
-  .timeline-meta {
-    white-space: normal;
+  .timeline-meta,
+  .timeline-meta-location {
+    font-size: 0.78rem;
+    line-height: 1.25;
+    white-space: nowrap;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
