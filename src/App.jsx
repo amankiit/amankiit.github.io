@@ -15,7 +15,7 @@ import {
 
 function getInitialTheme() {
   if (typeof window === 'undefined') {
-    return 'light';
+    return 'dark';
   }
 
   try {
@@ -24,15 +24,16 @@ function getInitialTheme() {
       return savedTheme;
     }
   } catch {
-    // no-op: default to light theme if storage is unavailable
+    // no-op: default to dark theme if storage is unavailable
   }
 
-  return 'light';
+  return 'dark';
 }
 
 function App() {
   const [theme, setTheme] = useState(getInitialTheme);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isBlogOpen, setIsBlogOpen] = useState(false);
   const [openExperiences, setOpenExperiences] = useState(() =>
     experience.map(() => true)
   );
@@ -107,6 +108,14 @@ function App() {
         currentIndex === index ? !currentOpenState : currentOpenState
       )
     );
+  }, []);
+
+  const toggleBlog = useCallback(() => {
+    setIsBlogOpen((currentState) => !currentState);
+  }, []);
+
+  const closeBlog = useCallback(() => {
+    setIsBlogOpen(false);
   }, []);
 
   return (
@@ -458,31 +467,43 @@ function App() {
         </div>
       </footer>
 
-      <div className="floating-blog">
+      <div className={`floating-blog ${isBlogOpen ? 'open' : ''}`}>
         <button
           type="button"
           className="floating-blog-toggle"
           aria-label="Blog Posts"
           aria-controls="blog-posts-panel"
+          aria-expanded={isBlogOpen}
+          onClick={toggleBlog}
         >
           <span className="floating-blog-icon" aria-hidden="true">
             {'<'}
           </span>
           <span className="floating-blog-label">Blog Posts</span>
         </button>
-        <div id="blog-posts-panel" className="floating-blog-panel">
+        <div
+          id="blog-posts-panel"
+          className="floating-blog-panel"
+          aria-hidden={!isBlogOpen}
+        >
           <a
             className="floating-blog-source"
             href="https://x.com/f_sicc"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeBlog}
           >
             @f_sicc on X
           </a>
           <ul className="floating-blog-list">
             {blogPosts.map((article) => (
               <li key={article.url}>
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeBlog}
+                >
                   {article.title}
                 </a>
               </li>

@@ -668,10 +668,12 @@ p {
   width: min(380px, calc(100vw - 1.2rem));
   max-height: 68vh;
   overflow: hidden;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: translateX(16px);
   transition:
+    visibility 0s linear 0.24s,
     opacity 0.24s ease,
     transform 0.24s ease;
   border: 1px solid var(--line);
@@ -681,8 +683,7 @@ p {
   padding: 0.7rem;
 }
 
-.floating-blog:hover .floating-blog-toggle,
-.floating-blog:focus-within .floating-blog-toggle {
+.floating-blog.open .floating-blog-toggle {
   transform: translateX(0);
   width: 8.6rem;
   padding: 0 0.8rem;
@@ -697,23 +698,22 @@ p {
   transition: max-width 0.2s ease, opacity 0.16s ease;
 }
 
-.floating-blog:hover .floating-blog-icon,
-.floating-blog:focus-within .floating-blog-icon {
+.floating-blog.open .floating-blog-icon {
   max-width: 0;
   opacity: 0;
 }
 
-.floating-blog:hover .floating-blog-label,
-.floating-blog:focus-within .floating-blog-label {
+.floating-blog.open .floating-blog-label {
   max-width: 7rem;
   opacity: 1;
 }
 
-.floating-blog:hover .floating-blog-panel,
-.floating-blog:focus-within .floating-blog-panel {
+.floating-blog.open .floating-blog-panel {
+  visibility: visible;
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
+  transition-delay: 0s;
 }
 
 .floating-blog-source {
