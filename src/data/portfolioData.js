@@ -81,7 +81,7 @@ export const projects = [
     github: 'https://github.com/amanKIIT/AI-powered-CDS-application-using-SMART-on-FHIR',
   },
   {
-    title: 'RxAnalyzer - An AI-powered medical prescription summary generator',
+    title: 'RxAnalyzer - An AI-powered medical prescription summarizer',
     description:
       'Prescription intelligence tool that summarizes clinical prescriptions using AI to improve readability, medication clarity, and patient-provider communication.',
     image: '/assets/img/2.jpeg',
