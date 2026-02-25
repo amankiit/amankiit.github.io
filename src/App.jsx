@@ -38,7 +38,7 @@ function App() {
     experience.map(() => true)
   );
   const currentYear = new Date().getFullYear();
-  const contributionColor = theme === 'dark' ? 'b7cb94' : '5a6d45';
+  const contributionColor = '5a6d45'; // Use same color palette for both themes
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
