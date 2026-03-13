@@ -159,7 +159,7 @@ function App() {
               <div className="hero-name-row">
                 <div className="portrait-wrap">
                   <img
-                    src="/assets/img/me4.jpeg"
+                    src="/assets/img/me5.png"
                     alt="Aman Raj"
                     className="profile-photo"
                     loading="eager"
