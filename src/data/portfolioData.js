@@ -39,6 +39,7 @@ export const experience = [
       'Designed secure backend systems and REST APIs using Node.js, Express.js, and Django REST Framework, JWT/OAuth authentication.',
       'Integrated EHR systems (OpenEMR, Epic, Oracle Health) using HL7 FHIR and SMART on FHIR standards to enable real-time clinical data exchange and interoperability.',
       'Developed AI-powered Clinical Decision Support (CDS) features using LLM integrations to assist providers with recommendations.',
+      'Worked on SOAP notes transcription and generation locally using Ollama and OpenAI Whisper speech to text model.',
       'Implemented Stripe payment gateway and Zoom API integrations for Clinical Supervision Systems.',
       'Optimized backend performance and API response time.',
       'Maintained HIPAA compliance and implemented secure role-based access control.',
