@@ -199,37 +199,16 @@ p {
 }
 
 .hero-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: clamp(460px, 68vw, 640px);
-}
-
-.hero-image-panel {
-  border-right: 0;
-  background: transparent;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .hero-content-panel {
-  padding: clamp(1.2rem, 3.6vw, 2.8rem);
+  padding: clamp(1.5rem, 3.8vw, 3rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
-}
-
-.profile-photo {
-  width: clamp(190px, 28vw, 310px);
-  height: clamp(190px, 28vw, 310px);
-  border-radius: 50%;
-  display: block;
-  object-fit: cover;
-  object-position: center 20%;
-  filter: none;
-  border: 0;
+  max-width: 72ch;
 }
 
 .eyebrow {
@@ -746,29 +725,26 @@ p {
 
 .section,
 .reveal {
-  opacity: 0;
-  transform: translateY(10px);
-  transition:
-    opacity var(--motion-duration) var(--motion-ease),
-    transform var(--motion-duration) var(--motion-ease);
+  opacity: 1;
+  transform: none;
 }
 
 .section.in-view,
 .reveal.in-view {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .section {
-  transition-duration: 0.5s;
+  transition: none;
 }
 
 .delay-1 {
-  transition-delay: 0.05s;
+  transition-delay: 0s;
 }
 
 .delay-2 {
-  transition-delay: 0.1s;
+  transition-delay: 0s;
 }
 
 @media (max-width: 960px) {
@@ -812,14 +788,7 @@ p {
   }
 
   .hero-split {
-    grid-template-columns: 1fr;
     min-height: 0;
-  }
-
-  .hero-image-panel {
-    border-right: 0;
-    border-bottom: 0;
-    min-height: 320px;
   }
 
   .header-controls {

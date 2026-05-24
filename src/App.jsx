@@ -61,39 +61,6 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
-  useEffect(() => {
-    const targets = document.querySelectorAll('.section, .reveal');
-    if (targets.length === 0) {
-      return undefined;
-    }
-
-    if (typeof window.IntersectionObserver === 'undefined') {
-      targets.forEach((target) => target.classList.add('in-view'));
-      return undefined;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          entry.target.classList.add('in-view');
-          observer.unobserve(entry.target);
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: '0px 0px -10% 0px',
-      }
-    );
-
-    targets.forEach((target) => observer.observe(target));
-
-    return () => observer.disconnect();
-  }, []);
-
   const toggleTheme = useCallback(() => {
     setTheme((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
   }, []);
@@ -157,15 +124,6 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy reveal">
               <div className="hero-split">
-                <div className="hero-image-panel">
-                  <img
-                    src="/assets/img/me5.png"
-                    alt="Aman Raj"
-                    className="profile-photo"
-                    loading="eager"
-                    decoding="async"
-                  />
-                </div>
                 <div className="hero-content-panel">
                   <div className="hero-name-text">
                     <h1>Aman Raj</h1>
