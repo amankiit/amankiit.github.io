@@ -156,8 +156,8 @@ function App() {
         <section id="home" className="hero section">
           <div className="container hero-grid">
             <div className="hero-copy reveal">
-              <div className="hero-name-row">
-                <div className="portrait-wrap">
+              <div className="hero-split">
+                <div className="hero-image-panel">
                   <img
                     src="/assets/img/me5.png"
                     alt="Aman Raj"
@@ -166,56 +166,58 @@ function App() {
                     decoding="async"
                   />
                 </div>
-                <div className="hero-name-text">
-                  <h1>Aman Raj</h1>
+                <div className="hero-content-panel">
+                  <div className="hero-name-text">
+                    <h1>Aman Raj</h1>
+                    <p className="eyebrow">Software Engineer</p>
+                  </div>
+                  <p className="tagline">
+                    A full-stack software engineer focused on scalable web apps,
+                    healthcare interoperability, and AI-powered products.
+                  </p>
+                  <div className="hero-social-chips">
+                    <a
+                      className="social-chip"
+                      href="https://github.com/amanKIIT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/github/c9cec5"
+                        alt=""
+                        aria-hidden="true"
+                        className="social-chip-logo"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span>GitHub</span>
+                    </a>
+                    <a
+                      className="social-chip"
+                      href="https://leetcode.com/amanKIIT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/leetcode/c9cec5"
+                        alt=""
+                        aria-hidden="true"
+                        className="social-chip-logo"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span>LeetCode</span>
+                    </a>
+                  </div>
+                  <div className="hero-actions">
+                    <a className="button primary" href="#experience">
+                      View Experience
+                    </a>
+                    <a className="button ghost" href="#projects">
+                      View Projects
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <p className="eyebrow">Software Engineer</p>
-              <p className="tagline">
-                A full-stack software engineer focused on scalable web apps,
-                healthcare interoperability, and AI-powered products.
-              </p>
-              <div className="hero-social-chips">
-                <a
-                  className="social-chip"
-                  href="https://github.com/amanKIIT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/github/c9cec5"
-                    alt=""
-                    aria-hidden="true"
-                    className="social-chip-logo"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span>GitHub</span>
-                </a>
-                <a
-                  className="social-chip"
-                  href="https://leetcode.com/amanKIIT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/leetcode/c9cec5"
-                    alt=""
-                    aria-hidden="true"
-                    className="social-chip-logo"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span>LeetCode</span>
-                </a>
-              </div>
-              <div className="hero-actions">
-                <a className="button primary" href="#experience">
-                  View Experience
-                </a>
-                <a className="button ghost" href="#projects">
-                  View Projects
-                </a>
               </div>
             </div>
           </div>
@@ -453,7 +455,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p>&copy; {currentYear} Aman Raj. Made with focus and consistency.</p>
+          <p></p>
           <button
             className="theme-toggle footer-theme-toggle"
             type="button"
