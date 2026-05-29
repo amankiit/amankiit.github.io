@@ -187,7 +187,7 @@ function App() {
             <div className="summary-grid">
               <article className="panel reveal">
                 {summaryParagraphs.map((item) => (
-                  <p key={item}>{item}</p>
+                  <p key={item} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
               </article>
 
@@ -270,7 +270,7 @@ function App() {
                       <div className="experience-panel-inner">
                         <ul>
                           {job.highlights.map((point) => (
-                            <li key={point}>{point}</li>
+                            <li key={point} dangerouslySetInnerHTML={{ __html: point }} />
                           ))}
                         </ul>
                       </div>
@@ -285,38 +285,27 @@ function App() {
         <section id="projects" className="section">
           <div className="container">
             <h2>Projects</h2>
-            <div className="projects-grid">
-              {projects.map((project, index) => (
-                <article
-                  className={`project-card reveal delay-${index % 3} ${index % 4 === 0 ? 'project-feature' : ''}`}
-                  key={project.title}
-                >
-                  <div className="project-media">
-                    {project.image ? (
+            <ul className="projects-list">
+              {projects.map((project) => (
+                <li key={project.title} className="project-item reveal">
+                  <h3>{project.title}</h3>
+                  <p dangerouslySetInnerHTML={{ __html: project.description }} />
+                  {project.github ? (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-logo-link">
                       <img
-                        src={project.image}
-                        alt={project.title}
+                        src="https://cdn.simpleicons.org/github/f5f5f5"
+                        alt="GitHub"
+                        className="github-logo"
                         loading="lazy"
                         decoding="async"
                       />
-                    ) : (
-                      <div className="project-fallback">Project</div>
-                    )}
-                  </div>
-                  <div className="project-body">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    {project.github ? (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        GitHub Link
-                      </a>
-                    ) : (
-                      <span className="muted">GitHub link not listed</span>
-                    )}
-                  </div>
-                </article>
+                    </a>
+                  ) : (
+                    <span className="muted">GitHub link not listed</span>
+                  )}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 

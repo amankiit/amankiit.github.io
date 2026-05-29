@@ -3,7 +3,7 @@ import articlesData from './articles.json';
 export const THEME_KEY = 'aman-portfolio-theme';
 
 export const summaryParagraphs = [
-  'Full-Stack Software Engineer with hands-on experience in building scalable web applications using React.js, Node.js, Express.js, Django, and RESTful APIs. Proficient in JavaScript, Python, MySQL, MongoDB, Redis, JWT authentication, AI/LLM integrations, and AWS cloud services. Strong focus on clean code, MVC architecture, Agile methodologies, and problem-solving.',
+  'Full-Stack Software Engineer with hands-on experience in building scalable web applications using React.js, Node.js, Express.js, Django, and RESTful APIs. Proficient in JavaScript, Python, MySQL, MongoDB, Redis, JWT/OAuth authentication, AI/LLM integrations, NLP, Machine Learning and AWS cloud services. Strong focus on clean code, MVC architecture, Agile methodologies, and problem-solving.',
 ];
 
 export const technicalSkills = [
@@ -19,8 +19,10 @@ export const coreConcepts = [
   'RESTful APIs',
   'WebSockets',
   'Webhooks',
-  'JWT/OAuth',
+  'Authentication & Authorization',
   'AI/LLM Integrations',
+  'NLP',
+  'Machine Learning',
   'Responsive Design',
   'Agile/Scrum',
   'CI/CD Concepts',
@@ -40,6 +42,7 @@ export const experience = [
       'Integrated EHR systems (OpenEMR, Epic, Oracle Health) using HL7 FHIR and SMART on FHIR standards to enable real-time clinical data exchange and interoperability.',
       'Developed AI-powered Clinical Decision Support (CDS) features using LLM integrations to assist providers with recommendations.',
       'Worked on SOAP notes transcription and generation locally using Ollama and OpenAI Whisper speech to text model.',
+      'Implemented PHI de-identification and redaction using NLP libraries like spaCy for LLM input.',
       'Implemented Stripe payment gateway and Zoom API integrations for Clinical Supervision Systems.',
       'Optimized backend performance and API response time.',
       'Maintained HIPAA compliance and implemented secure role-based access control.',
@@ -54,7 +57,7 @@ export const experience = [
       'Developed a HIPAA-compliant real-time chat application using Socket.io, enabling secure communication between patients and providers.',
       'Implemented role-based access control (RBAC) and authentication using JWT.',
       'Designed backend services with Node.js and Express.js, and integrated Redis for real-time messaging and caching.',
-      'Collaborated with senior engineers to implement healthcare workflows aligned with security and compliance standards.',
+      'Collaborated with senior engineers to implement healthcare workflows aligned with security and compliance standards.'
     ],
   },
   {
@@ -68,7 +71,7 @@ export const experience = [
       'Implemented K-Means clustering to identify distinct customer segments, enabling targeted marketing strategies.',
       'Developed classification models (Logistic Regression, Random Forest, XGBoost) to detect fraudulent transactions, improving detection accuracy by up to 40%.',
       'Applied model evaluation techniques (cross-validation, confusion matrix, ROC-AUC) to optimize performance.',
-      'Visualized insights using Matplotlib and Seaborn to support data-driven decision-making.',
+      'Visualized insights using Matplotlib and Seaborn to support data-driven decision-making.'
     ],
   },
 ];
@@ -78,57 +81,49 @@ export const projects = [
     title: 'AI-powered CDS application using SMART on FHIR',
     description:
       'AI-enabled Clinical Decision Support application built with SMART on FHIR workflows for interoperable EHR integration and actionable clinical insights.',
-    image: '/assets/img/1.jpeg',
     github: 'https://github.com/amanKIIT/AI-powered-CDS-application-using-SMART-on-FHIR',
   },
   {
     title: 'RxAnalyzer - An AI-powered medical prescription summarizer',
     description:
       'Prescription intelligence tool that summarizes clinical prescriptions using AI to improve readability, medication clarity, and patient-provider communication.',
-    image: '/assets/img/2.jpeg',
     github: 'https://github.com/amanKIIT/RxAnalyzer-An-AI-powered-medical-prescription-summary-generator',
   },
   {
     title: 'SMART on FHIR Chat Application for Clinicians, Providers and Patients',
     description:
       'Real-time SMART on FHIR chat solution enabling secure communication between clinicians, providers, and patients with context-aware healthcare workflows.',
-    image: '/assets/img/3.jpeg',
     github: 'https://github.com/amanKIIT/SMART-on-FHIR-Chat-Application-for-Clinicians-Providers-and-Patients',
   },
   {
-    title: 'SMART on FHIR Suite for Clinicians and Providers',
+    title: 'Safeguarding PHI in the AI Era : SOAP Notes Transcription & Generation with OpenAI Whisper, NLP/NER, and LLMs locally.',
     description:
-      'Integrated SMART on FHIR platform suite for clinicians and providers, designed to streamline care workflows and improve interoperability across systems.',
-    image: '/assets/img/4.jpeg',
-    github: 'https://github.com/amanKIIT/SMART-on-FHIR-Suite-for-Clinicians-Providers',
+      'Transcribe medical audio locally using OpenAI Whisper, redact PHI from transcript text using NLP/NER, and generate a structured SOAP note (Subjective, Objective, Assessment, Plan) using a local LLM.',
+    github: 'https://github.com/amankiit/SOAP-Notes-Generation-with-OpenAI-Whisper-NLP-NER-and-LLMs-locally',
   },
   {
-    title: 'Crop Disease Detection System',
+    title: 'Crop Disease Detection System using CNN',
     description:
       'Created a CNN-based deep learning system to promote smart and precision agriculture with TensorFlow and Keras for crop disease classification.',
-    image: '/assets/img/crop%20disease.png',
     github: 'https://github.com/amankiit/Crop-Disease-Detection-using-Deep-Learning',
   },
   {
     title: 'Customer Segmentation Using ML',
     description:
       'Applied clustering algorithms in Python to segment customers based on behavioral and demographic patterns.',
-    image: '',
-    github: '',
+    github: 'https://github.com/amankiit/Customer-Segmentation',
   },
   {
     title: 'Blockchain based decentralized Voting Application',
     description:
       'Developed a decentralized voting dApp using Solidity, Truffle, Ganache, and MetaMask with a secure frontend built in JavaScript, HTML, and CSS.',
-    image: '/assets/img/ethereum%20voting%20app.png',
     github: 'https://github.com/amankiit/Ethereum-blockchain-based-Voting-Election-app',
   },
   {
     title: 'Sparse Data Study for Malware Detection',
     description:
       'Compared sparse data handling techniques and evaluated multiple machine learning classifiers for Android malware detection.',
-    image: '',
-    github: '',
+    github: 'https://github.com/amankiit/Comparative-study-of-handling-sparse-dataset---Malware-Application-Detection-System',
   },
 ];
 
