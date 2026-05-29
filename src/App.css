@@ -168,14 +168,25 @@ p {
   font-weight: 600;
   cursor: pointer;
   text-transform: uppercase;
+  border: 1px solid var(--line);
+  border-radius: 4px;
 }
 
 .menu-toggle {
   display: none;
 }
 
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .theme-toggle strong {
-  font-size: 0.86rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
