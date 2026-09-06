@@ -334,9 +334,77 @@ p {
   gap: 1rem;
 }
 
+.summary-main,
 .stack {
   display: grid;
   gap: 1rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+.section-heading p {
+  max-width: 55ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.ventures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.venture-card {
+  min-height: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+}
+
+.venture-card h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  margin-bottom: 0.75rem;
+}
+
+.venture-card > p:not(.venture-label) {
+  max-width: 48ch;
+  color: var(--muted);
+}
+
+.venture-label {
+  margin-bottom: 1.6rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.venture-link {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.venture-link:hover {
+  text-decoration: underline;
 }
 
 .meta-list {
@@ -866,6 +934,26 @@ p {
 }
 
 @media (max-width: 700px) {
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading h2 {
+    margin-bottom: 0.9rem;
+  }
+
+  .section-heading p {
+    text-align: left;
+  }
+
+  .ventures-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .venture-card {
+    min-height: 0;
+  }
+
   html {
     font-size: 15px;
   }

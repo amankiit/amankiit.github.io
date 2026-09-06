@@ -11,6 +11,7 @@ import {
   projects,
   summaryParagraphs,
   technicalSkills,
+  ventures,
 } from './data/portfolioData';
 
 function getInitialTheme() {
@@ -185,22 +186,11 @@ function App() {
           <div className="container">
             <h2>Professional Summary</h2>
             <div className="summary-grid">
-              <article className="panel reveal">
-                {summaryParagraphs.map((item) => (
-                  <p key={item} dangerouslySetInnerHTML={{ __html: item }} />
-                ))}
-              </article>
-
-              <div className="stack">
-                <article className="panel reveal delay-1">
-                  <h3>Technical Skills</h3>
-                  <ul className="meta-list">
-                    {technicalSkills.map(([label, value]) => (
-                      <li key={label}>
-                        <strong>{label}:</strong> {value}
-                      </li>
-                    ))}
-                  </ul>
+              <div className="summary-main">
+                <article className="panel reveal">
+                  {summaryParagraphs.map((item) => (
+                    <p key={item} dangerouslySetInnerHTML={{ __html: item }} />
+                  ))}
                 </article>
 
                 <article className="panel reveal delay-2">
@@ -212,6 +202,19 @@ function App() {
                       </span>
                     ))}
                   </div>
+                </article>
+              </div>
+
+              <div className="stack">
+                <article className="panel reveal delay-1">
+                  <h3>Technical Skills</h3>
+                  <ul className="meta-list">
+                    {technicalSkills.map(([label, value]) => (
+                      <li key={label}>
+                        <strong>{label}:</strong> {value}
+                      </li>
+                    ))}
+                  </ul>
                 </article>
               </div>
             </div>
@@ -278,6 +281,38 @@ function App() {
                   </article>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        <section id="ventures" className="section">
+          <div className="container">
+            <div className="section-heading">
+              <h2>Ventures &amp; Research</h2>
+              <p>
+                Work beyond the day-to-day: building in healthcare AI and
+                sharing independent market research.
+              </p>
+            </div>
+            <div className="ventures-grid">
+              {ventures.map((venture, index) => (
+                <article
+                  className={`venture-card reveal delay-${index}`}
+                  key={venture.title}
+                >
+                  <p className="venture-label">{venture.label}</p>
+                  <h3>{venture.title}</h3>
+                  <p>{venture.description}</p>
+                  <a
+                    className="venture-link"
+                    href={venture.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {venture.linkLabel} <span aria-hidden="true">↗</span>
+                  </a>
+                </article>
+              ))}
             </div>
           </div>
         </section>

@@ -10,7 +10,7 @@ export const technicalSkills = [
   ['Languages', 'JavaScript, Python, HTML, CSS'],
   ['Frontend', 'React.js'],
   ['Backend', 'Node.js, Express.js, Django'],
-  ['Databases', 'MySQL, MongoDB, Redis'],
+  ['Databases', 'MySQL, PostgreSQL, MongoDB, Redis'],
   ['Tools', 'Git, GitHub, Docker, Postman, Jira'],
   ['Cloud', 'AWS'],
 ];
@@ -21,6 +21,7 @@ export const coreConcepts = [
   'Webhooks',
   'Authentication & Authorization',
   'AI/LLM Integrations',
+  'RAG (Retrieval-Augmented Generation)',
   'NLP',
   'Machine Learning',
   'Responsive Design',
@@ -127,6 +128,25 @@ export const projects = [
   },
 ];
 
+export const ventures = [
+  {
+    title: 'Omiihealth',
+    label: 'Healthcare AI Startup',
+    description:
+      'Building at the intersection of healthcare and AI integration, with a focus on creating thoughtful technology for modern care experiences.',
+    href: 'https://omiihealth.com',
+    linkLabel: 'Visit Omiihealth',
+  },
+  {
+    title: 'HedgeFMX',
+    label: 'Macroeconomics & Finance Research',
+    description:
+      'Sharing independent perspectives on macroeconomics, financial markets, cryptocurrency and the ideas shaping the global economy.',
+    href: 'https://www.youtube.com/@hedgeFMX',
+    linkLabel: 'Watch on YouTube',
+  },
+];
+
 export const education = [
   {
     title: 'Bachelor of Technology in Computer Science Engineering',
@@ -155,7 +175,6 @@ export const certifications = [
 export const contacts = [
   ['LinkedIn', 'amanraj31', 'https://linkedin.com/in/amanraj31'],
   ['X', '@f_sicc', 'https://x.com/f_sicc'],
-  ['YouTube', '@f_sicc', 'https://www.youtube.com/@f_sicc'],
   ['GitHub', 'amanKIIT', 'https://github.com/amanKIIT'],
 ];
 
@@ -163,6 +182,7 @@ export const nav = [
   ['Home', '#home'],
   ['Summary', '#summary'],
   ['Experience', '#experience'],
+  ['Ventures', '#ventures'],
   ['Projects', '#projects'],
   ['Education', '#education'],
   ['Contact', '#contact'],
